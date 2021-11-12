@@ -55,52 +55,19 @@ static uint8_t Get_BLEFirmware_Details(void);
 uint8_t Get_BLEFirmware_Details(void)
 {
   uint8_t status;
+  char patch_version[27]={' ','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
 
   uint8_t  DTM_version_major, DTM_version_minor, DTM_version_patch, DTM_variant;
   uint16_t DTM_Build_Number;
   uint8_t  BTLE_Stack_version_major, BTLE_Stack_version_minor, BTLE_Stack_version_patch,
            BTLE_Stack_development;
   uint16_t BTLE_Stack_variant, BTLE_Stack_Build_Number;
-  uint8_t  *BTLE_sv_patch, *DTM_v_patch;
 
   status = aci_hal_get_firmware_details(&DTM_version_major, &DTM_version_minor,
                                         &DTM_version_patch, &DTM_variant, &DTM_Build_Number,
                                         &BTLE_Stack_version_major, &BTLE_Stack_version_minor,
                                         &BTLE_Stack_version_patch, &BTLE_Stack_development,
                                         &BTLE_Stack_variant, &BTLE_Stack_Build_Number);
-  switch (BTLE_Stack_version_patch) {
-  case 0:
-    BTLE_sv_patch = (uint8_t*)" ";
-    break;
-  case 1:
-    BTLE_sv_patch = (uint8_t*)"a";
-    break;
-  case 2:
-    BTLE_sv_patch = (uint8_t*)"b";
-    break;
-  case 3:
-    BTLE_sv_patch = (uint8_t*)"c";
-    break;
-  default:
-    BTLE_sv_patch = (uint8_t*)"(patch > c)";
-  }
-
-  switch (DTM_version_patch) {
-  case 0:
-    DTM_v_patch = (uint8_t*)" ";
-    break;
-  case 1:
-    DTM_v_patch = (uint8_t*)"a";
-    break;
-  case 2:
-    DTM_v_patch = (uint8_t*)"b";
-    break;
-  case 3:
-    DTM_v_patch = (uint8_t*)"c";
-    break;
-  default:
-    DTM_v_patch = (uint8_t*)"(patch > c)";
-  }
 
   message(ANSI_COLOR_RESET);    /* reset foreground color */
   message(ANSI_CLEAR_SCREEN);   /* serial console clear screen */
@@ -110,21 +77,19 @@ uint8_t Get_BLEFirmware_Details(void)
   message(" *             BLE2 Universal Central v%d.%d.%d            *\r\n",
           CENTRAL_MAJOR_VERSION, CENTRAL_MINOR_VERSION, CENTRAL_PATCH_VERSION);
   message(" *                                                      *\r\n");
-  message(" *                         ----                         *\r\n");
-  message(" *                                                      *\r\n");
+  message(" * *********************** ---- *********************** *\r\n");
 
   if (status == BLE_STATUS_SUCCESS) {
              /* **************************************************** */
-             /*             BLE2 Universal Central v1.0.0            */
+             /*             BLE2 Universal Central vx.y.z            */
              /*           BlueNRG-2 FW v2.1b - DTM SPI v3.2          */
-    message(" *           BlueNRG-2 FW v%d.%d%s - DTM %s v%d.%d%s         *\r\n",
-            BTLE_Stack_version_major, BTLE_Stack_version_minor, BTLE_sv_patch,
+             /* *********************** ---- *********************** */
+    message("\r\n");
+    message(" BlueNRG-2 FW v%d.%d%c - DTM %s v%d.%d%c \r\n",
+            BTLE_Stack_version_major, BTLE_Stack_version_minor, patch_version[BTLE_Stack_version_patch],
             DTM_variant == 0x01 ? "UART" : (DTM_variant == 0x02 ? "SPI" : "unknown"),
-            DTM_version_major, DTM_version_minor, DTM_v_patch);
+            DTM_version_major, DTM_version_minor, patch_version[DTM_version_patch]);
   }
-
-  message(" *                                                      *\r\n");
-  message(" * *********************** ---- *********************** *\r\n");
 
   return status;
 }

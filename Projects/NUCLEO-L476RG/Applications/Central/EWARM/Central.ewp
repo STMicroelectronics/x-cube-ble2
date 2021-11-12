@@ -1017,7 +1017,7 @@
                 </option>
                 <option>
                     <name>IlinkTrustzoneImportLibraryOut</name>
-                    <state></state>
+                    <state>Central_import_lib.o</state>
                 </option>
                 <option>
                     <name>OILinkExtraOption</name>

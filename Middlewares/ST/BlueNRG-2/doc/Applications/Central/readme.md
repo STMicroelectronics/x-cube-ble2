@@ -18,6 +18,10 @@ The user can communicate with the BLE central device through a serial console, s
 the Speed to 115200 baud/sec, where both the command menu and the peripheral information 
 are printed.
 
+This application requires the following linker settings:
+ - CSTACK minimum size 0x600
+ - HEAP minimum size 0x200
+
 Known limitations:
 
 - When starting the project from Example Selector in STM32CubeMX and regenerating 

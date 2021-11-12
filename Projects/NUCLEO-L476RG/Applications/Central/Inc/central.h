@@ -30,7 +30,7 @@
 
 /* Exported defines ----------------------------------------------------------*/
 #define CENTRAL_MAJOR_VERSION            1
-#define CENTRAL_MINOR_VERSION            0
+#define CENTRAL_MINOR_VERSION            1
 #define CENTRAL_PATCH_VERSION            0
 
 #define MAX_NUM_OF_DEVICES   10
