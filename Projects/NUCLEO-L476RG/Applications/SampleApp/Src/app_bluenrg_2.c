@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2021 STMicroelectronics.
+  * Copyright (c) 2022 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -918,7 +918,7 @@ void aci_gatt_disc_read_char_by_uuid_resp_event(uint16_t Connection_Handle,
 
 /*******************************************************************************
  * Function Name  : aci_gatt_proc_complete_event.
- * Description    : GATT procedure complet event.
+ * Description    : GATT procedure complete event.
  * Input          : See file bluenrg1_events.h
  * Output         : See file bluenrg1_events.h
  * Return         : See file bluenrg1_events.h

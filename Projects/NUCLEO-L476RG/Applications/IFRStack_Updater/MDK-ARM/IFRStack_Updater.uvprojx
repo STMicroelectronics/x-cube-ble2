@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32L476xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc; ../../../../../Drivers/STM32L4xx_HAL_Driver/Inc; ../../../../../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy; ../../../../../Drivers/CMSIS/Device/ST/STM32L4xx/Include; ../../../../../Drivers/CMSIS/Include; ../../../../../Middlewares/ST/BlueNRG-2/hci/hci_tl_patterns/Basic; ../../../../../Middlewares/ST/BlueNRG-2/utils; ../../../../../Middlewares/ST/BlueNRG-2/includes</IncludePath>
+              <IncludePath>../Inc;../../../../../Drivers/STM32L4xx_HAL_Driver/Inc;../../../../../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy;../../../../../Drivers/CMSIS/Device/ST/STM32L4xx/Include;../../../../../Drivers/CMSIS/Include;../../../../../Middlewares/ST/BlueNRG-2/hci/hci_tl_patterns/Basic;../../../../../Middlewares/ST/BlueNRG-2/utils;../../../../../Middlewares/ST/BlueNRG-2/includes</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>

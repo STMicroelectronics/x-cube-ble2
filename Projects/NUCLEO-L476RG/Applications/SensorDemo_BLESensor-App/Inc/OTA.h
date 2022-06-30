@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2021 STMicroelectronics.
+  * Copyright (c) 2022 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -40,12 +40,12 @@
 
 /* Exported functions --------------------------------------------------------*/
 
-/* API for preparing the Flash for receiving the Update. It defines also the Size of the Update and the CRC value aspected */
+/* API for preparing the Flash for receiving the Update. It defines also the Size of the Update and the CRC value expected */
 void StartUpdateFWBlueNRG(uint32_t SizeOfUpdate,uint32_t uwCRCValue);
 
 /* API for storing chuck of data to Flash.
- * When it has recived the total number of byte defined by StartUpdateFWBlueNRG,
- * it computes the CRC value and if it matches the aspected CRC value,
+ * When it has received the total number of byte defined by StartUpdateFWBlueNRG,
+ * it computes the CRC value and if it matches the expected CRC value,
  * it writes the Magic Number in Flash for BootLoader */
 int8_t UpdateFWBlueNRG(uint32_t *SizeOfUpdateBlueFW,uint8_t * att_data, int32_t data_length,uint8_t WriteMagicNum);
 

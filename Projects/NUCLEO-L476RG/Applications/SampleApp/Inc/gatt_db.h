@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2021 STMicroelectronics.
+  * Copyright (c) 2022 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -24,7 +24,7 @@
 
 /**
  * This sample application uses a char value length greater than 20 bytes
- * (tipically used).
+ * (typically used).
  * For using greater values for CHAR_VALUE_LENGTH (max 512) and
  * CLIENT_MAX_MTU_SIZE (max 247):
  * - increase both the two #define below to their max values

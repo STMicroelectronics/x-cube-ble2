@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2021 STMicroelectronics.
+  * Copyright (c) 2022 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -381,8 +381,8 @@ void Central_Process(void)
 {
   uint8_t dev_idx  = saved_devices.dev_idx;
   uint8_t serv_idx = saved_devices.dev_info[dev_idx].serv_idx;
-  uint8_t char_idx = saved_devices.dev_info[dev_idx].serv_info[serv_idx].char_idx;
-  uint8_t prop_idx = saved_devices.dev_info[dev_idx].serv_info[serv_idx].char_info[char_idx].prop_idx;
+  uint8_t char_idx;
+  uint8_t prop_idx;
 
   switch (central_status)
   {
@@ -419,6 +419,8 @@ void Central_Process(void)
   case (UPDATE_CHARACTERISTIC):
     PRINT_DBG("\n    UPDATE_CHARACTERISTIC\n");
     central_status = WAITING_UPDATE_CHARACTERISTIC;
+    char_idx = saved_devices.dev_info[dev_idx].serv_info[serv_idx].char_idx;
+    prop_idx = saved_devices.dev_info[dev_idx].serv_info[serv_idx].char_info[char_idx].prop_idx;
     Update_Characteristic(dev_idx, serv_idx, char_idx, prop_idx);
     break;
   case (SELECT_CHARACTERISTIC):
@@ -429,6 +431,7 @@ void Central_Process(void)
     allow_console = TRUE;
     break;
   case (DISABLE_NOTIFICATIONS):
+    char_idx = saved_devices.dev_info[dev_idx].serv_info[serv_idx].char_idx;
     Set_Notifications(dev_idx, serv_idx, char_idx, 0x00);
     central_status = WAITING_DISABLE_NOTIFICATIONS;
     break;

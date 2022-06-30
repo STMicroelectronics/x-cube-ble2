@@ -47,13 +47,6 @@ This application project requires:
   - CSTACK minimum size 0xD00
   - HEAP minimum size 0x200
 
-Known limitations:
-
-- When starting the project from Example Selector in STM32CubeMX and regenerating 
-  it from ioc file, you may face a build issue. To solve it, remove from the IDE project 
-  the file stm32l4xx_nucleo.c in Application/User virtual folder and delete from Src and 
-  Inc folders the files: stm32l4xx_nucleo.c, stm32l4xx_nucleo.h and stm32l4xx_nucleo_errno.h.
-
 ### <b>Keywords</b>
 
 BLE, SPI, YMODEM
@@ -76,8 +69,7 @@ BLE, SPI, YMODEM
 						
  - stm32**xx_nucleo_bus.c Source file for the BSP BUS IO driver
  
- - system_stm32**xx.c     CMSIS Cortex-Mx Device Peripheral Access Layer
-                          System Source File
+ - system_stm32**xx.c     CMSIS Cortex-Mx Device Peripheral Access Layer System Source File
 
  - update_fw_image.c      BlueNRG-2 FW image in hex format
  
@@ -90,21 +82,26 @@ BLE, SPI, YMODEM
   - This example has been tested with STMicroelectronics:
     - NUCLEO-L476RG RevC board
 
-ADDITIONAL_BOARD : X-NUCLEO-BNRG2A1 https://www.st.com/content/st_com/en/products/ecosystems/stm32-open-development-environment/stm32-nucleo-expansion-boards/stm32-ode-connect-hw/x-nucleo-bnrg2a1.html
-ADDITIONAL_COMP : BlueNRG-M2SP https://www.st.com/content/st_com/en/products/wireless-connectivity/short-range/bluetooth-low-energy-application-processors/bluenrg-m2.html
+ADDITIONAL_BOARD : X-NUCLEO-BNRG2A1 https://www.st.com/en/ecosystems/x-nucleo-bnrg2a1.html
+ADDITIONAL_COMP : BlueNRG-M2SP https://www.st.com/en/wireless-connectivity/bluenrg-m2.html
   
 ### <b>How to use it?</b>
 
 In order to make the program work, you must do the following:
+
  - WARNING: before opening the project with any toolchain be sure your folder
    installation path is not too in-depth since the toolchain may report errors
    after building.
- - Open STM32CubeIDE (this firmware has been successfully tested with Version 1.6.1).
+   
+ - Open STM32CubeIDE (this firmware has been successfully tested with Version 1.9.0).
    Alternatively you can use the Keil uVision toolchain (this firmware
    has been successfully tested with V5.32.0) or the IAR toolchain (this firmware has 
-   been successfully tested with Embedded Workbench V8.50.9).
+   been successfully tested with Embedded Workbench V9.20.1).
+   
  - Rebuild all files and load your image into target memory.
+ 
  - Run the example.
+ 
  - Alternatively, you can download the pre-built binaries in "Binary" 
    folder included in the distributed package.
 
@@ -114,7 +111,7 @@ SRA Application Team
 
 ### <b>License</b>
 
-Copyright (c) 2021 STMicroelectronics.
+Copyright (c) 2022 STMicroelectronics.
 All rights reserved.
 
 This software is licensed under terms that can be found in the LICENSE file

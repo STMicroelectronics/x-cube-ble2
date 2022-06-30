@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2021 STMicroelectronics.
+  * Copyright (c) 2022 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -55,7 +55,6 @@
 /* Exported function prototypes ----------------------------------------------*/
 void    Main_Menu(void);
 uint8_t Get_Value(uint8_t* console_ch);
-int     Uart_Send_Char(int ch);
 int     Uart_Receive_Char(void);
 int     Uart_Receive_Char_Timeout(int timeout);
 

@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2021 STMicroelectronics.
+  * Copyright (c) 2022 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -33,7 +33,7 @@
 #define NUMBER_OF_APPLICATION_SERVICES (2)
 
 /**
- * @brief Define How Many quaterions you want to trasmit (from 1 to 3)
+ * @brief Define How Many quaterions you want to transmit (from 1 to 3)
  *        In this sample application use only 1
  */
 #define SEND_N_QUATERNIONS 1

@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2021 STMicroelectronics.
+  * Copyright (c) 2022 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -360,7 +360,7 @@ tBleStatus Quat_Update(AxesRaw_t *data)
 /**
  * @brief  Update Terminal characteristic value
  * @param  uint8_t    *data string to write
- * @param  uint8_t    length lengt of string to write
+ * @param  uint8_t    length length of string to write
  * @retval tBleStatus Status
  */
 tBleStatus Term_Update(uint8_t *data,uint8_t length)

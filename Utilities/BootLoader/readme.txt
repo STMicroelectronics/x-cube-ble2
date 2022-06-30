@@ -9,7 +9,7 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2020 STMicroelectronics.
+  * Copyright (c) 2022 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -44,7 +44,7 @@ Flash start address (0x08000000) and has the purpose to apply and run the Firmwa
 It runs the program normally if no update is received.
 
 For STM32L476RG (Nucleo or SensorTile [STEVAL-STLCS01V1]) the 1Mbytes-Flash is divided in 
-2 512Kbytes-banks. Each bank is splitted in 256 2Kbytes-pages.
+2 512Kbytes-banks. Each bank is split in 256 2Kbytes-pages.
 
 |Page 0->7  | Page 4->255       | Page 256->511 |
 |16K        | 504K              | 512K          |
@@ -72,7 +72,7 @@ Also, without the BootLoader that programs could not be executed.
 -------------------------------------------------------------------------------------------------------------
 Hereafter some information related to other STM32 series are provided (even if not supported in this package)
 -------------------------------------------------------------------------------------------------------------
-- For STM32F401RE (Nucleo) or STM32F446RE (Nucleo or BlueCoin) the 512Kbyte-Flash are splitted in 8 sectors:
+- For STM32F401RE (Nucleo) or STM32F446RE (Nucleo or BlueCoin) the 512Kbyte-Flash are split in 8 sectors:
 
   |sector 0   | sector 1  | sector 2  | sector 3  | sector 4  | sector 5  | sector 6  | sector 7  |
   |16K        | 16K       | 16K       | 16K       | 64K       | 128K      | 128K      | 128K      |
@@ -90,7 +90,7 @@ Hereafter some information related to other STM32 series are provided (even if n
 
   The FOTA must be less than 240Kbytes
 
-- For STM32L4R9ZI the 2Mbytes-Flash is Divided in 2 1Mbytes-banks. Each bank is splitted in 256 4Kbytes-pages.
+- For STM32L4R9ZI the 2Mbytes-Flash is Divided in 2 1Mbytes-banks. Each bank is split in 256 4Kbytes-pages.
 
   |Page 0->7  | Page 4->255       | Page 256->511 |
   |16K        | 1008K             | 1024K         |
@@ -108,5 +108,3 @@ Hereafter some information related to other STM32 series are provided (even if n
     - it works like a trampoline for executing the normal program stored from Region 2 (0x08004000 address)
 
   The FOTA must be less than 1008Kbytes
-
- /******************* (C) COPYRIGHT 2020 STMicroelectronics *****END OF FILE****/

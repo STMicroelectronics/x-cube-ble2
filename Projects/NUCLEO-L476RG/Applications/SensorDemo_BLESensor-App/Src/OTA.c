@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2021 STMicroelectronics.
+  * Copyright (c) 2022 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -179,7 +179,7 @@ int8_t UpdateFWBlueNRG(uint32_t *SizeOfUpdate,uint8_t * att_data, int32_t data_l
         OTA_ERROR_FUNCTION();
       }
     }
-    /* Reduce the remaing bytes for OTA completition */
+    /* Reduce the remaining bytes for OTA completion */
     *SizeOfUpdate -= data_length;
 
     if(*SizeOfUpdate==0) {
@@ -190,7 +190,7 @@ int8_t UpdateFWBlueNRG(uint32_t *SizeOfUpdate,uint8_t * att_data, int32_t data_l
         uint32_t uwCRCValue = 0;
 
         if(AspecteduwCRCValue) {
-          /* Make the CRC integrety check */
+          /* Make the CRC integrity check */
           /* CRC handler declaration */
           CRC_HandleTypeDef   CrcHandle;
 
@@ -261,7 +261,7 @@ int8_t UpdateFWBlueNRG(uint32_t *SizeOfUpdate,uint8_t * att_data, int32_t data_l
         } else {
           ReturnValue=-1;
           if(AspecteduwCRCValue) {
-            OTA_PRINTF("Wrong CRC! Computed=%lx  aspected=%lx ... Try again\r\n", (long)uwCRCValue, (long)AspecteduwCRCValue);
+            OTA_PRINTF("Wrong CRC! Computed=%lx  expected=%lx ... Try again\r\n", (long)uwCRCValue, (long)AspecteduwCRCValue);
           }
         }
       }
@@ -277,7 +277,7 @@ int8_t UpdateFWBlueNRG(uint32_t *SizeOfUpdate,uint8_t * att_data, int32_t data_l
 /**
  * @brief Start Function for Updating the Firmware
  * @param uint32_t SizeOfUpdate  size of the firmware image [bytes]
- * @param uint32_t uwCRCValue aspected CRV value
+ * @param uint32_t uwCRCValue expected CRV value
  * @retval None
  */
 void StartUpdateFWBlueNRG(uint32_t SizeOfUpdate, uint32_t uwCRCValue)

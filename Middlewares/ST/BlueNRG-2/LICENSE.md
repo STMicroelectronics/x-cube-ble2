@@ -1,8 +1,8 @@
-SLA0055
+SLA0055 Rev4/May 2017
 
 ## Software license agreement
 
-### SOFTWARE LICENSE AGREEMENT ("Agreement")
+### __SOFTWARE LICENSE AGREEMENT ("Agreement")__
 
 The Licensed Software as defined below may contain various software that are subject to different
 license agreements. The terms and conditions of those license agreements are available below, as well
@@ -40,31 +40,40 @@ ACKNOWLEDGE THAT YOU HAVE READ THE VARIOUS LICENSE AGREEMENTS APPLICABLE
 TO EACH SOFTWARE IN THIS DELIVERY AND YOU AGREE TO BE BOUND BY THE TERMS OF
 THOSE LICENSES. IF YOU DO NOT AGREE WITH ANY CONDITION OF THOSE LICENSES, DO
 NOT INSTALL, DOWNLOAD, ACCESS OR USE THE SOFTWARE IN THIS DELIVERY.
-ST SOFTWARE LICENSE
+
+
+__ST SOFTWARE LICENSE__
+
 By using this Licensed Software, You are agreeing to be bound by the terms and conditions of this
 Agreement. Do not use the Licensed Software until You have read and agreed to the following terms
 and conditions and with the other terms and conditions that may apply according with (ii) and (iii) here
 above. The use of the Licensed Software implies automatically the acceptance of the following terms
 and conditions.
 
-### DEFINITIONS
+
+__DEFINITIONS__
 
 Affiliates: means any corporation, partnership, or other entity that, directly or indirectly, owns, is owned
 by, or is under common ownership with ST, for so long as such ownership exists. For the purposes of
 the foregoing, "own," "owned," or "ownership" shall mean ownership of more than fifty percent (50%) of
 the stock or other equity interests entitled to vote for the election of directors or an equivalent governing
 body.
+
 Compiled Code: means a machine-executable code in binary format.
+
 IP Rights: means all patents, patent applications, including with respect to patents, any patent rights
 granted upon any reissue, division, continuation or continuation-in-part applications now or hereafter
 filed, utility models issued or pending, registered and unregistered design rights, copyrights (including
 the copyright on software in any code), semiconductor mask works, trade secrets, know-how, and other
 similar statutory intellectual property or industrial rights, as well as applications for any such rights.
+
 Feedback: means any recommendations, suggestions, comments and corrections, including but not
 limited to code enhancement, code modifications or bug fixes, related to the Licensed Software and any
 elements and parts thereof.
+
 Licensed Field: means all markets and applications worldwide, excluding: (i) life supporting devices or
 systems, (ii) automotive safety, nuclear, military and aerospace markets and applications, (iii) opensource applications in case the Licensed Software is not already contaminated by ST.
+
 Licensed Software: means the enclosed SOFTWARE/FIRMWARE, EXAMPLES, PROJECT
 TEMPLATE and all the related documentation and design tools licensed and delivered in the form of
 object and/or source code as the case may be.
@@ -75,7 +84,9 @@ exclusively on ST Device.
 ST Device: means the combination of: a) one ST microcontroller and b) one ST integrated circuit
 chosen by You provided that a) and b) are manufactured and sold by or for ST.
 
-### LICENSE
+
+__LICENSE__
+
 STMicroelectronics International NV a Dutch company with headquarter at 39, Chemin du Champ des
 filles, 1228 Plan-les-Oates Geneva (“ST”) grants to You under IP Rights owned by ST and its Affiliates
 or under which ST and its Affiliates has the right to grant a license a non-exclusive, worldwide, nontransferable (whether by assignment or otherwise unless expressly authorized by ST) non sublicensable, revocable, royalty-free limited license to use the Licensed Software to:
@@ -90,7 +101,9 @@ providing documentation for the Product and its usage;
 (iv) make, have made, use, sell, offer to sell, import and export or otherwise distribute Products also
 through multiple tiers.
 
-### OWNERSHIP AND COPYRIGHT
+
+__OWNERSHIP AND COPYRIGHT__
+
 Title to the Licensed Software, related documentation and all copies thereof remain with ST and/or its
 licensors. You may not remove the copyrights notices from the Licensed Software and to any copies of 
 the Licensed Software. You agree to prevent any unauthorized copying of the Licensed Software and
@@ -101,7 +114,9 @@ You agree that no press releases or announcements or any marketing, advertising 
 materials related to this Agreement or referencing or implying ST or its trade names, trademarks, or
 service marks can be released without ST prior written approval.
 
-### RESTRICTIONS
+
+__RESTRICTIONS__
+
 Unless otherwise explicitly stated in this Agreement, You may not sell, assign, sublicense, lease, rent or
 otherwise distribute the Licensed Software for commercial purposes, in whole or in part. You
 acknowledge and agree that any use, adaptation, translation or transcription of the Licensed Software or
@@ -117,7 +132,9 @@ to whether such unauthorized use or distribution has occurred. You shall coopera
 determination of whether there has been unauthorized use or distribution of the source code of the
 Licensed Software and will take appropriate steps to remedy any unauthorized use or distribution.
 
-### NO WARRANTY
+
+__NO WARRANTY__
+
 TO THE EXTENT PERMITTED BY THE LAWS, THE LICENSED SOFTWARE IS PROVIDED “AS IS”
 AND “WITH ALL FAULTS” WITHOUT WARRANTY OR REPRESENTATION OF ANY KIND
 EXPRESSED OR IMPLIED AND ST AND ITS LICENSORS EXPRESSLY DISCLAIM ALL
@@ -174,7 +191,33 @@ THE ST PARTIES MAY SUFFER BECAUSE OF ANY THIRD PARTIES CLAIM THAT MAY ARISE
 FROM OR THAT IS IN CONNECTION WITH THE USE YOU HAVE MADE OF THE LICENSED
 SOFTWARE.
 
-### TERMINATION
+
+__LIMITATION OF LIABILITIES AND INDEMNIFICATION__
+
+TO THE EXTENT PERMITTED BY THE LAW IN NO EVENT ST , ITS AFFILIATES, ITS LICENSORS
+AND SUBCONTRACTORS INCLUDING THE OFFICERS, DIRECTORS, EMPLOYEES,
+SHAREHOLDERS OR AGENTS OF ANY OF THEM (“ST PARTIES”) SHALL BE LIABLE TO YOU OR
+TO ANY THIRD PARTY THAT YOU MAY BIND TO THIS AGREEMENT FOR ANY INDIRECT,
+SPECIAL, CONSEQUENTIAL, INCIDENTAL, PUNITIVE DAMAGES OR OTHER DAMAGES
+(INCLUDING BUT NOT LIMITED TO, THE COST OF LABOUR, RE-QUALIFICATION, DELAY, LOSS
+OF PROFITS, LOSS OF REVENUES, LOSS OF DATA, COSTS OF PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES OR THE LIKE) WHETHER BASED ON CONTRACT, TORT,
+OR ANY OTHER LEGAL THEORY, RELATING TO OR IN CONNECTION WITH THE LICENSED
+SOFTWARE, THE DOCUMENTATION OR THIS AGREEMENT, EVEN IF ST PARTIES HAVE BEEN
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+IN NO EVENT SHALL ST’S LIABILITY TO YOU OR ANY THIRD PARTY THAT YOU MAY BIND TO
+THIS AGREEMENT, UNDER THIS AGREEMENT (INCLUDING BUT NOT LIMITED TO CLAIMS
+ARISING FROM OR IN CONNECTION WITH THE LICENSED SOFTWARE AND/OR ANY PART
+THEREOF AND THE USE OF THEM) FOR ANY CAUSE OF ACTION EXCEED IN THE AGGREGATE
+100 US$. THIS SECTION DOES NOT APPLY TO THE EXTENT PROHIBITED BY LAW.
+YOU AGREE TO INDEMNIFY ST PARTIES FOR ANY DAMAGE OR LOSS THAT ANY AND ALL OF
+THE ST PARTIES MAY SUFFER BECAUSE OF ANY THIRD PARTIES CLAIM THAT MAY ARISE
+FROM OR THAT IS IN CONNECTION WITH THE USE YOU HAVE MADE OF THE LICENSED
+SOFTWARE.
+
+
+__TERMINATION__
+
 This Agreement shall be effective as of the moment in which You accept this terms and conditions and
 shall terminate 10 (ten) years thereafter. ST may terminate this Agreement: a) at any time if You are in
 material breach of any of its terms and conditions and You have failed to cure such breach within 30
@@ -183,7 +226,9 @@ You will immediately destroy or return all copies of the Licensed Software and r
 ST. After termination, You will be entitled to use the Licensed Software used into Products that include
 ST Device manufactured by or for ST, purchased by You before the date of the termination.
 
-### COMPLIANCE
+
+__COMPLIANCE__
+
 You agree not to use the Licensed Software in violation of any applicable law, statute, ordinance or
 other regulation or any obligation and to procure any information that may be needed for such a
 purpose. You agree to comply with all applicable laws and regulations affecting the use of the Licensed
@@ -200,7 +245,9 @@ to refuse the delivery of the Licensed Software in case ST should reasonably sus
 or the usage by You is in breach of any applicable export control law and regulation or any other
 applicable law.
 
-### APPLICABLE LAW AND JURISDICTION
+
+__APPLICABLE LAW AND JURISDICTION__
+
 This Agreement shall be construed, governed and enforced in accordance with the law of Switzerland
 without regards to its conflict of law provisions. For sake of clarity the United Nations Convention on
 Contracts for the International Sale of Goods (Vienna, 1980) (CISG) shall not apply.
@@ -208,13 +255,17 @@ Any dispute arising out of or in connection with this Agreement shall be exclusi
 of Geneva, Switzerland.. Notwithstanding the aforesaid, nothing in this Agreement shall prevent ST from
 seeking any interim or final injunctive or equitable relief by a court of competent jurisdiction.
 
-### SEVERABILITY
+
+__SEVERABILITY__
+
 If any provision of this agreement or any part thereof is or becomes, at any time or for any reason,
 unenforceable or invalid, no the remaining part of any other provision of this agreement shall be affected
 thereby, and the remaining provisions of this agreement shall continue with the same force and effect as
 if such unenforceable or invalid provisions or parts thereof had not been inserted in this Agreement.
 
-### ENTIRE AGREEMENT
+
+__ENTIRE AGREEMENT__
+
 The terms and conditions contained herein constitute the entire agreement between You and ST and
 shall supersede all previous communications either oral or written, between You and ST with respect to
 the subject matter hereof. No oral explanation or oral information by You, ST and its Affiliates hereto
@@ -222,11 +273,15 @@ shall alter the meaning or interpretation of this Agreement. This Agreement may 
 right of You or ST waived, except by means of an amendment which expressly references this
 Agreement and is duly executed by duly authorised representatives of You, ST and its Affiliates.
 
-### WAIVER
+
+__WAIVER__
+
 The waiver by either party of any breach of any provisions of this Agreement shall not operate or be
 construed as a waiver of any other or a subsequent breach of the same or a different provision.
 
-### ASSIGNMENT
+
+__ASSIGNMENT__
+
 This Agreement may not be assigned by You, nor any of Your rights or obligations hereunder, to any
 third party without prior written consent of ST (which shall not be unreasonably withheld). In the event
 that this Agreement is assigned effectively to a third party, this Agreement shall bind upon successors
@@ -235,9 +290,10 @@ as its rights and obligations in whole or in part to any of its Affiliates as we
 connection with any transfer of any ST business or part of business to which this Agreement pertains,
 by merger, consolidation, reorganization or otherwise.
 
-### RELATIONSHIP OF THE PARTIES
+
+__RELATIONSHIP OF THE PARTIES__
+
 Nothing in this Agreement shall create, or be deemed to create, a partnership or the relationship of
 principal and agent or employer and employee between the Parties. Neither Party has the authority or
 power to bind, to contract in the name of or to create a liability for the other in any way or for any
 purpose.
-

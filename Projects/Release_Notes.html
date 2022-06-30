@@ -25,7 +25,7 @@
 <div class="col-sm-12 col-lg-4">
 <center>
 <h1 id="release-notes-for-x-cube-ble2-projects">Release Notes for <mark>X-CUBE-BLE2</mark> Projects</h1>
-<p>Copyright © 2021 STMicroelectronics<br />
+<p>Copyright © 2022 STMicroelectronics<br />
 </p>
 <a href="https://www.st.com" class="logo"><img src="../_htmresc/st_logo_2020.png" alt="ST logo" /></a>
 </center>
@@ -35,10 +35,95 @@
 <section id="update-history" class="col-sm-12 col-lg-8">
 <h1>Update History</h1>
 <div class="collapse">
-<input type="checkbox" id="collapse-section7" checked aria-hidden="true"> <label for="collapse-section7" aria-hidden="true">V3.2.2 / 18-Oct-2021</label>
+<input type="checkbox" id="collapse-section8" checked aria-hidden="true"> <label for="collapse-section8" aria-hidden="true">V3.3.0 / 08-Jun-2022</label>
 <div>
 <h2 id="main-changes">Main Changes</h2>
 <h3 id="maintenance-release">Maintenance release</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Headline</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Create sample applications with STM32CubeMX V6.6.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Rely on BSP Common features for UART communication via virtual COM port</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<p><small>The components flagged by “<span class="icon-st-update"></span>” have changed since the previous release. “<span class="icon-st-add"></span>” are new.</small></p>
+<p>Projects</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Board/Device</th>
+<th style="text-align: left;">Category</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">NUCLEO-L476RG</td>
+<td style="text-align: left;">Application <span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\Beacon">Beacon</a></td>
+<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\Beacon\readme.md">readme</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NUCLEO-L476RG</td>
+<td style="text-align: left;">Application <span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\Central">Central</a></td>
+<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\Central\readme.md">readme</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NUCLEO-L476RG</td>
+<td style="text-align: left;">Application <span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\IFRStack_Updater">IFRStack_Updater</a></td>
+<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\IFRStack_Updater\readme.md">readme</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NUCLEO-L476RG</td>
+<td style="text-align: left;">Application <span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\SampleApp">SampleApp</a></td>
+<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\SampleApp\readme.md">readme</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NUCLEO-L476RG</td>
+<td style="text-align: left;">Application <span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\SensorDemo_BLESensor-App">SensorDemo_BLESensor-App</a></td>
+<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\SensorDemo_BLESensor-App\readme.md">readme</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NUCLEO-L476RG</td>
+<td style="text-align: left;">Application <span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\Virtual_COM_Port">Virtual_COM_Port</a></td>
+<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\Virtual_COM_Port\readme.md">readme</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="development-toolchains-and-compilers">Development Toolchains and Compilers</h2>
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain V9.20.1</li>
+<li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.32.0</li>
+<li>STM32CubeIDE V1.9.0</li>
+</ul>
+<h2 id="supported-devices-and-boards">Supported Devices and Boards</h2>
+<ul>
+<li>STM32L476RG devices and STM32L476RG-Nucleo board RevB</li>
+<li>X-NUCLEO-BNRG2A1</li>
+<li>BlueNRG-2 and BlueNRG-2N Bluetooth® Low Energy devices</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section7" aria-hidden="true"> <label for="collapse-section7" aria-hidden="true">V3.2.2 / 18-Oct-2021</label>
+<div>
+<h2 id="main-changes-1">Main Changes</h2>
+<h3 id="maintenance-release-1">Maintenance release</h3>
 <table>
 <thead>
 <tr class="header">
@@ -54,7 +139,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="contents">Contents</h2>
+<h2 id="contents-1">Contents</h2>
 <p><small>The components flagged by “<span class="icon-st-update"></span>” have changed since the previous release. “<span class="icon-st-add"></span>” are new.</small></p>
 <p>Projects</p>
 <table>
@@ -105,93 +190,11 @@
 </tr>
 </tbody>
 </table>
-<h2 id="development-toolchains-and-compilers">Development Toolchains and Compilers</h2>
-<ul>
-<li>IAR Embedded Workbench for ARM (EWARM) toolchain V8.50.9</li>
-<li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.32.0</li>
-<li>STM32CubeIDE V1.7.0</li>
-</ul>
-<h2 id="supported-devices-and-boards">Supported Devices and Boards</h2>
-<ul>
-<li>STM32L476RG devices and STM32L476RG-Nucleo board RevB</li>
-<li>X-NUCLEO-BNRG2A1</li>
-<li>BlueNRG-2 and BlueNRG-2N Bluetooth® Low Energy devices</li>
-</ul>
-</div>
-</div>
-<div class="collapse">
-<input type="checkbox" id="collapse-section6" aria-hidden="true"> <label for="collapse-section6" aria-hidden="true">V3.2.1 / 18-June-2021</label>
-<div>
-<h2 id="main-changes-1">Main Changes</h2>
-<h3 id="product-update">Product update</h3>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Headline</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Create sample applications with STM32CubeMX V6.3.0</td>
-</tr>
-</tbody>
-</table>
-<h2 id="contents-1">Contents</h2>
-<p><small>The components flagged by “<span class="icon-st-update"></span>” have changed since the previous release. “<span class="icon-st-add"></span>” are new.</small></p>
-<p>Projects</p>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Board/Device</th>
-<th style="text-align: left;">Category</th>
-<th style="text-align: left;">Name</th>
-<th style="text-align: left;">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">NUCLEO-L476RG</td>
-<td style="text-align: left;">Application</td>
-<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\Beacon">Beacon</a></td>
-<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\Beacon\readme.txt">readme</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">NUCLEO-L476RG</td>
-<td style="text-align: left;">Application</td>
-<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\Central">Central</a></td>
-<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\Central\readme.txt">readme</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">NUCLEO-L476RG</td>
-<td style="text-align: left;">Application</td>
-<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\IFRStack_Updater">IFRStack_Updater</a></td>
-<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\IFRStack_Updater\readme.txt">readme</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">NUCLEO-L476RG</td>
-<td style="text-align: left;">Application</td>
-<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\SampleApp">SampleApp</a></td>
-<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\SampleApp\readme.txt">readme</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">NUCLEO-L476RG</td>
-<td style="text-align: left;">Application</td>
-<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\SensorDemo_BLESensor-App">SensorDemo_BLESensor-App</a></td>
-<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\SensorDemo_BLESensor-App\readme.txt">readme</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">NUCLEO-L476RG</td>
-<td style="text-align: left;">Application</td>
-<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\Virtual_COM_Port">Virtual_COM_Port</a></td>
-<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\Virtual_COM_Port\readme.txt">readme</a></td>
-</tr>
-</tbody>
-</table>
 <h2 id="development-toolchains-and-compilers-1">Development Toolchains and Compilers</h2>
 <ul>
 <li>IAR Embedded Workbench for ARM (EWARM) toolchain V8.50.9</li>
 <li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.32.0</li>
-<li>STM32CubeIDE V1.6.1</li>
+<li>STM32CubeIDE V1.7.0</li>
 </ul>
 <h2 id="supported-devices-and-boards-1">Supported Devices and Boards</h2>
 <ul>
@@ -202,10 +205,10 @@
 </div>
 </div>
 <div class="collapse">
-<input type="checkbox" id="collapse-section5" aria-hidden="true"> <label for="collapse-section5" aria-hidden="true">V3.2.0 / 01-February-2021</label>
+<input type="checkbox" id="collapse-section6" aria-hidden="true"> <label for="collapse-section6" aria-hidden="true">V3.2.1 / 18-June-2021</label>
 <div>
 <h2 id="main-changes-2">Main Changes</h2>
-<h3 id="product-update-1">Product update</h3>
+<h3 id="product-update">Product update</h3>
 <table>
 <thead>
 <tr class="header">
@@ -214,7 +217,7 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Update documentation to introduce support to Example Selector in STM32CubeMX</td>
+<td style="text-align: left;">Create sample applications with STM32CubeMX V6.3.0</td>
 </tr>
 </tbody>
 </table>
@@ -271,9 +274,9 @@
 </table>
 <h2 id="development-toolchains-and-compilers-2">Development Toolchains and Compilers</h2>
 <ul>
-<li>IAR Embedded Workbench for ARM (EWARM) toolchain V8.50.5</li>
-<li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.31.0</li>
-<li>STM32CubeIDE V1.5.1</li>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain V8.50.9</li>
+<li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.32.0</li>
+<li>STM32CubeIDE V1.6.1</li>
 </ul>
 <h2 id="supported-devices-and-boards-2">Supported Devices and Boards</h2>
 <ul>
@@ -284,9 +287,91 @@
 </div>
 </div>
 <div class="collapse">
-<input type="checkbox" id="collapse-section4" aria-hidden="true"> <label for="collapse-section4" aria-hidden="true">V3.1.0 / 16-November-2020</label>
+<input type="checkbox" id="collapse-section5" aria-hidden="true"> <label for="collapse-section5" aria-hidden="true">V3.2.0 / 01-February-2021</label>
 <div>
 <h2 id="main-changes-3">Main Changes</h2>
+<h3 id="product-update-1">Product update</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Headline</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Update documentation to introduce support to Example Selector in STM32CubeMX</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents-3">Contents</h2>
+<p><small>The components flagged by “<span class="icon-st-update"></span>” have changed since the previous release. “<span class="icon-st-add"></span>” are new.</small></p>
+<p>Projects</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Board/Device</th>
+<th style="text-align: left;">Category</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">NUCLEO-L476RG</td>
+<td style="text-align: left;">Application</td>
+<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\Beacon">Beacon</a></td>
+<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\Beacon\readme.txt">readme</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NUCLEO-L476RG</td>
+<td style="text-align: left;">Application</td>
+<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\Central">Central</a></td>
+<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\Central\readme.txt">readme</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NUCLEO-L476RG</td>
+<td style="text-align: left;">Application</td>
+<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\IFRStack_Updater">IFRStack_Updater</a></td>
+<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\IFRStack_Updater\readme.txt">readme</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NUCLEO-L476RG</td>
+<td style="text-align: left;">Application</td>
+<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\SampleApp">SampleApp</a></td>
+<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\SampleApp\readme.txt">readme</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NUCLEO-L476RG</td>
+<td style="text-align: left;">Application</td>
+<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\SensorDemo_BLESensor-App">SensorDemo_BLESensor-App</a></td>
+<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\SensorDemo_BLESensor-App\readme.txt">readme</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NUCLEO-L476RG</td>
+<td style="text-align: left;">Application</td>
+<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\Virtual_COM_Port">Virtual_COM_Port</a></td>
+<td style="text-align: left;"><a href="NUCLEO-L476RG\Applications\Virtual_COM_Port\readme.txt">readme</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="development-toolchains-and-compilers-3">Development Toolchains and Compilers</h2>
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain V8.50.5</li>
+<li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.31.0</li>
+<li>STM32CubeIDE V1.5.1</li>
+</ul>
+<h2 id="supported-devices-and-boards-3">Supported Devices and Boards</h2>
+<ul>
+<li>STM32L476RG devices and STM32L476RG-Nucleo board RevB</li>
+<li>X-NUCLEO-BNRG2A1</li>
+<li>BlueNRG-2 and BlueNRG-2N Bluetooth® Low Energy devices</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section4" aria-hidden="true"> <label for="collapse-section4" aria-hidden="true">V3.1.0 / 16-November-2020</label>
+<div>
+<h2 id="main-changes-4">Main Changes</h2>
 <h3 id="product-update-2">Product update</h3>
 <table>
 <thead>
@@ -300,7 +385,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="contents-3">Contents</h2>
+<h2 id="contents-4">Contents</h2>
 <p><small>The components flagged by “<span class="icon-st-update"></span>” have changed since the previous release. “<span class="icon-st-add"></span>” are new.</small></p>
 <p>Projects</p>
 <table>
@@ -351,13 +436,13 @@
 </tr>
 </tbody>
 </table>
-<h2 id="development-toolchains-and-compilers-3">Development Toolchains and Compilers</h2>
+<h2 id="development-toolchains-and-compilers-4">Development Toolchains and Compilers</h2>
 <ul>
 <li>IAR Embedded Workbench for ARM (EWARM) toolchain V8.50.5</li>
 <li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.31.0</li>
 <li>STM32CubeIDE V1.4.1</li>
 </ul>
-<h2 id="supported-devices-and-boards-3">Supported Devices and Boards</h2>
+<h2 id="supported-devices-and-boards-4">Supported Devices and Boards</h2>
 <ul>
 <li>STM32L476RG devices and STM32L476RG-Nucleo board RevB</li>
 <li>X-NUCLEO-BNRG2A1</li>
@@ -368,7 +453,7 @@
 <div class="collapse">
 <input type="checkbox" id="collapse-section3" aria-hidden="true"> <label for="collapse-section3" aria-hidden="true">V3.0.0 / 30-September-2020</label>
 <div>
-<h2 id="main-changes-4">Main Changes</h2>
+<h2 id="main-changes-5">Main Changes</h2>
 <h3 id="product-update-3">Product update</h3>
 <table>
 <thead>
@@ -388,7 +473,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="contents-4">Contents</h2>
+<h2 id="contents-5">Contents</h2>
 <p><small>The components flagged by “<span class="icon-st-update"></span>” have changed since the previous release. “<span class="icon-st-add"></span>” are new.</small></p>
 <p>Projects</p>
 <table>
@@ -439,13 +524,13 @@
 </tr>
 </tbody>
 </table>
-<h2 id="development-toolchains-and-compilers-4">Development Toolchains and Compilers</h2>
+<h2 id="development-toolchains-and-compilers-5">Development Toolchains and Compilers</h2>
 <ul>
 <li>IAR Embedded Workbench for ARM (EWARM) toolchain V8.50.5</li>
 <li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.31.0</li>
 <li>STM32CubeIDE V1.4.1</li>
 </ul>
-<h2 id="supported-devices-and-boards-4">Supported Devices and Boards</h2>
+<h2 id="supported-devices-and-boards-5">Supported Devices and Boards</h2>
 <ul>
 <li>STM32L476RG devices and STM32L476RG-Nucleo board RevB</li>
 <li>X-NUCLEO-BNRG2A1</li>
@@ -456,7 +541,7 @@
 <div class="collapse">
 <input type="checkbox" id="collapse-section2" aria-hidden="true"> <label for="collapse-section2" aria-hidden="true">V2.0.0 / 01-July-2020</label>
 <div>
-<h2 id="main-changes-5">Main Changes</h2>
+<h2 id="main-changes-6">Main Changes</h2>
 <h3 id="product-update-4">Product update</h3>
 <table>
 <thead>
@@ -473,7 +558,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="contents-5">Contents</h2>
+<h2 id="contents-6">Contents</h2>
 <p><small>The components flagged by “<span class="icon-st-update"></span>” have changed since the previous release. “<span class="icon-st-add"></span>” are new.</small></p>
 <p>Projects</p>
 <table>
@@ -518,13 +603,13 @@
 </tr>
 </tbody>
 </table>
-<h2 id="development-toolchains-and-compilers-5">Development Toolchains and Compilers</h2>
+<h2 id="development-toolchains-and-compilers-6">Development Toolchains and Compilers</h2>
 <ul>
 <li>IAR Embedded Workbench for ARM (EWARM) toolchain V8.32.3</li>
 <li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.29.0</li>
 <li>STM32CubeIDE V1.3.1</li>
 </ul>
-<h2 id="supported-devices-and-boards-5">Supported Devices and Boards</h2>
+<h2 id="supported-devices-and-boards-6">Supported Devices and Boards</h2>
 <ul>
 <li>STM32L476RG devices and STM32L476RG-Nucleo board RevB</li>
 <li>X-NUCLEO-BNRG2A1</li>
@@ -535,9 +620,9 @@
 <div class="collapse">
 <input type="checkbox" id="collapse-section1" aria-hidden="true"> <label for="collapse-section1" aria-hidden="true">V1.0.0 / 13-December-2019</label>
 <div>
-<h2 id="main-changes-6">Main Changes</h2>
+<h2 id="main-changes-7">Main Changes</h2>
 <h3 id="first-release">First release</h3>
-<h2 id="contents-6">Contents</h2>
+<h2 id="contents-7">Contents</h2>
 <p>Projects</p>
 <table>
 <thead>
@@ -575,13 +660,13 @@
 </tr>
 </tbody>
 </table>
-<h2 id="development-toolchains-and-compilers-6">Development Toolchains and Compilers</h2>
+<h2 id="development-toolchains-and-compilers-7">Development Toolchains and Compilers</h2>
 <ul>
 <li>IAR Embedded Workbench for ARM (EWARM) toolchain V8.32.3</li>
 <li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.27.1</li>
 <li>STM32CubeIDE V1.1.0</li>
 </ul>
-<h2 id="supported-devices-and-boards-6">Supported Devices and Boards</h2>
+<h2 id="supported-devices-and-boards-7">Supported Devices and Boards</h2>
 <ul>
 <li>STM32L476RG devices and STM32L476RG-Nucleo board RevB</li>
 <li>X-NUCLEO-BNRG2A1</li>

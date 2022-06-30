@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2021 STMicroelectronics.
+  * Copyright (c) 2022 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -68,10 +68,10 @@ void Set_DeviceConnectable(void)
   uint8_t local_name[] = {AD_TYPE_COMPLETE_LOCAL_NAME,SENSOR_DEMO_NAME};
 
   uint8_t manuf_data[26] = {
-    2,0x0A,0x00, /* 0 dBm */  // Trasmission Power
+    2,0x0A,0x00, /* 0 dBm */  // Transmission Power
     8,0x09,SENSOR_DEMO_NAME,  // Complete Name
     13,0xFF,0x01, /* SKD version */
-    0x02,
+    0x80,
     0x00,
     0xF4, /* ACC+Gyro+Mag 0xE0 | 0x04 Temp | 0x10 Pressure */
     0x00, /*  */

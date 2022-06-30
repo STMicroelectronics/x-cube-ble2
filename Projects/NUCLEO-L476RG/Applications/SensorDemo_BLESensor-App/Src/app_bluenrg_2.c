@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2021 STMicroelectronics.
+  * Copyright (c) 2022 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -47,7 +47,7 @@
  * ACI_GAP_SLAVE_SECURITY_REQ procedure. The BLE Peripheral sets the key through
  * ACI_GAP_PASS_KEY_RESP command after the ACI_GAP_PASS_KEY_REQ_EVENT event is
  * generated.
- * At this stage, an input window is diplayed on the Central device for allowing
+ * At this stage, an input window is displayed on the Central device for allowing
  * user to insert the key set by the Peripheral device (123456 in this example).
  * After these operations the Pairing is completed and the bonded device is
  * displayed.

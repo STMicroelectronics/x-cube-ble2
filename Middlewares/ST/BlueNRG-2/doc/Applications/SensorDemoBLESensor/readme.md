@@ -16,7 +16,7 @@ The source code of the "ST BLE Sensor" app is available on GitHub at:
   - iOS: https://github.com/STMicroelectronics-CentralLabs/STBlueMS_iOS
   - Android: https://github.com/STMicroelectronics-CentralLabs/STBlueMS_Android
 
-@note: NO SUPPORT WILL BE PROVIDED TO YOU BY STMICROELECTRONICS FOR ANY OF THE
+__Note__: NO SUPPORT WILL BE PROVIDED TO YOU BY STMICROELECTRONICS FOR ANY OF THE
 ANDROID/iOS app INCLUDED IN OR REFERENCED BY THIS PACKAGE.
 
 After establishing the connection between the STM32 board and the smartphone:
@@ -34,7 +34,7 @@ or when the User Button is pressed.
 
 The communication is done using a vendor specific profile.
 
-VERY IMPORTANT NOTES for FOTA Feature (only for STM32L476RG):
+__VERY IMPORTANT NOTES__ for FOTA Feature (only for STM32L476RG):
 
  1) For the STM32L476RG MCU, this example support the Firmware-Over-The-Air (FOTA) 
     update using the ST BLE Sensor Android/iOS application (Version 3.0.0 or higher) 
@@ -46,8 +46,7 @@ VERY IMPORTANT NOTES for FOTA Feature (only for STM32L476RG):
     correctly run the FOTA feature, the following modifications to the code and the project are required 
 	before building:
 
-	3.1) In file Src/system_stm32l4xx.c, enable the #define USER_VECT_TAB_ADDRESS and set the VECT_TAB_OFFSET 
-	     to 0x4000 (the default value is 0x00)
+	3.1) In file Src/system_stm32l4xx.c, enable the #define USER_VECT_TAB_ADDRESS and set the VECT_TAB_OFFSET to 0x4000 (the default value is 0x00)
 	     #define VECT_TAB_OFFSET  0x4000 /*!< Vector Table base offset field.
                                               This value must be a multiple of 0x200. */
 											
@@ -86,13 +85,6 @@ VERY IMPORTANT NOTES for FOTA Feature (only for STM32L476RG):
 	SensorDemo_BLESensor-App sample application.
     Before launching the script for your IDE, open it and set the correct paths and filenames.
 
-Known limitations:
-
-- When starting the project from Example Selector in STM32CubeMX and regenerating 
-  it from ioc file, you may face a build issue. To solve it, remove from the IDE project 
-  the file stm32l4xx_nucleo.c in Application/User virtual folder and delete from Src and 
-  Inc folders the files: stm32l4xx_nucleo.c, stm32l4xx_nucleo.h and stm32l4xx_nucleo_errno.h.
-
 ### <b>Keywords</b>
 
 BLE, Peripheral, SPI
@@ -119,8 +111,7 @@ BLE, Peripheral, SPI
 						
  - stm32**xx_nucleo_bus.c Source file for the BSP BUS IO driver
  
- - system_stm32**xx.c     CMSIS Cortex-Mx Device Peripheral Access Layer
-                          System Source File
+ - system_stm32**xx.c     CMSIS Cortex-Mx Device Peripheral Access Layer System Source File
 
  - target_platform.c      Get information on the target device memory
   
@@ -131,26 +122,33 @@ BLE, Peripheral, SPI
   - This example has been tested with STMicroelectronics:
     - NUCLEO-L476RG RevC board
 
-ADDITIONAL_BOARD : X-NUCLEO-BNRG2A1 https://www.st.com/content/st_com/en/products/ecosystems/stm32-open-development-environment/stm32-nucleo-expansion-boards/stm32-ode-connect-hw/x-nucleo-bnrg2a1.html
-ADDITIONAL_COMP : BlueNRG-M2SP https://www.st.com/content/st_com/en/products/wireless-connectivity/short-range/bluetooth-low-energy-application-processors/bluenrg-m2.html
+ADDITIONAL_BOARD : X-NUCLEO-BNRG2A1 https://www.st.com/en/ecosystems/x-nucleo-bnrg2a1.html
+ADDITIONAL_COMP : BlueNRG-M2SP https://www.st.com/en/wireless-connectivity/bluenrg-m2.html
   
 ### <b>How to use it?</b>
 
 In order to make the program work, you must do the following:
+
  - WARNING: before opening the project with any toolchain be sure your folder
    installation path is not too in-depth since the toolchain may report errors
    after building.
- - Open STM32CubeIDE (this firmware has been successfully tested with Version 1.6.1).
+   
+ - Open STM32CubeIDE (this firmware has been successfully tested with Version 1.9.0).
    Alternatively you can use the Keil uVision toolchain (this firmware
    has been successfully tested with V5.32.0) or the IAR toolchain (this firmware has 
-   been successfully tested with Embedded Workbench V8.50.9).
+   been successfully tested with Embedded Workbench V9.20.1).
+   
  - Rebuild all files and 
-   - for STM32L476RG MCU: run the *.bat/*.sh script included in the IDE folder 
+ 
+   - for STM32L476RG MCU: run the .bat/.sh script included in the IDE folder 
      (EWARM/MDK-ARM/STM32CubeIDE)
+	 
    - for other STM32 MCU: load your image into target memory
+   
  - Run the example.
- - Alternatively, you can download the pre-built *.bin in "Binary" folder
-   included in the distributed package (for STM32L476RG MCU, the *_BL.bin file).
+ 
+ - Alternatively, you can download the pre-built .bin in "Binary" folder
+   included in the distributed package (for STM32L476RG MCU, the _BL.bin file).
 
 ### <b>Author</b>
 
@@ -158,7 +156,7 @@ SRA Application Team
 
 ### <b>License</b>
 
-Copyright (c) 2021 STMicroelectronics.
+Copyright (c) 2022 STMicroelectronics.
 All rights reserved.
 
 This software is licensed under terms that can be found in the LICENSE file
